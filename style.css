@@ -77,21 +77,13 @@ p{
     min-width: 300px;
     position: relative;
     bottom: 120px;
-    
- 
-
-}
+    }
 .col-2 h1{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
     font-family: "Touche W03 Medium";
 }
-.col-1 img{
-    position: relative;
-    right: 120px ;
-    
-     }
 
 
 .btn{
@@ -241,6 +233,7 @@ background-color: #9cbcf4;
     flex-direction: column;
     justify-content: space-between;
     background-color: #e3eaff;
+    margin-top: 10%;
     
 }
 .bi-list{
@@ -253,11 +246,39 @@ background-color: #9cbcf4;
     .bi-list{
         display: block;
     }
+    .contaner{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right:0.5rem;
+    }
     
 }
-@media screen {
-    
+@media(max-width:1185px) {
+    .col-2 h1{
+        font-size: 1.5rem;
+    }
+    .col-1{
+        width: 20%;
+    }
 }
+@media(max-width:405px) {
+  .col-1{
+    display: none;
+  }
+  .bi-arrow-left{
+    display: none;
+  }
+  .bi-arrow-right{
+    display: none;
+  }
+   h3{
+    font-size: 0.8rem;
+    padding-top: 20%;
+}
+}
+
 
 .sidebar{
     position: fixed;
@@ -301,9 +322,4 @@ ol a:hover{
     color: white;
   
 }
-.container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.;
-}
+
